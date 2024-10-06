@@ -1,0 +1,73 @@
+* {
+  margin: 10;
+  padding: 10;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(197, 226, 250);
+  font-family: Arial;
+  font-size: 20px;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 25px;
+  color: #0d1f5a;
+  text-align: center;
+}
+
+
+
+#emp-name {
+  background-color: rgb(85, 114, 194);
+
+  padding: 40px;
+}
+
+.add-data {
+  text-align: right;
+  font-size: 25px;
+  color: #0b0146;
+}
+
+.add-name {
+  
+  font-size: 20px;
+}
+
+.input-name {
+  
+  text-align: center;
+}
+
+.add-job {
+  
+
+  font-size: 20px;
+}
+
+.input-job {
+  
+  text-align: center;
+}
+
+.add-age {
+  
+
+  font-size: 20px;
+}
+
+.input-age {
+ 
+  text-align: center;
+}
+.button-add {
+  margin-top: 10%;
+  background-color: #cee0f5;
+  transition: background-color 0.5s;
+}
+.button-add:hover {
+  background-color: rgb(137, 206, 233);
+}
