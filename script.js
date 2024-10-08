@@ -17,7 +17,7 @@ function addEmployee() {
     document.getElementById("age").value = "";
     displayEmployees();
   } else {
-    alert("لطفا همه فیلد  را پر کنید");
+    alert("لطفا همه فیلد را پر کنید");
   }
 }
 
@@ -38,4 +38,4 @@ function deleteEmployee(index) {
   displayEmployees();
 }
 
-console.log(esaed);
+console.log("esaed");
