@@ -22,6 +22,8 @@ function addEmployee() {
 }
 
 function displayEmployees() {
+  const tablebody = document.getElementById("employeeTable");
+  tablebody.innerHTML = "";
   const employeelist = document.getElementById("employeelist");
   employeelist.innerHTML = "";
   employees.forEach((employee, index) => {
