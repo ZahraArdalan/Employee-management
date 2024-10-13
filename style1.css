@@ -18,8 +18,6 @@ h1 {
   text-align: center;
 }
 
-
-
 #emp-name {
   background-color: rgb(85, 114, 194);
 
@@ -33,41 +31,76 @@ h1 {
 }
 
 .add-name {
-  
   font-size: 20px;
 }
 
 .input-name {
-  
   text-align: center;
 }
 
-.add-job {
-  
+table {
+  width: 100%;
+  border-collapse: collapse; /* حذف فاصله بین خطوط */
+}
 
+th,
+td {
+  border: 1px solid #ddd; /* خطوط دور هر سلول */
+  padding: 12px; /* فضای داخل سلول‌ها */
+  text-align: center; /* وسط‌چین کردن متن‌ها */
+}
+
+th {
+  background-color: #f2f2f2; /* رنگ پس‌زمینه برای عنوان‌ها */
+  font-weight: bold;
+
+  background-color: #4caf50; /* رنگ سبز برای سرستون */
+  color: white; /* رنگ متن سفید */
+  text-align: center; /* وسط‌چین کردن متن‌ها */
+  padding: 12px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* ردیف‌های زوج را با رنگ ملایم‌تر نمایش می‌دهد */
+}
+
+tr:hover {
+  background-color: #e2e2e2; /* تغییر رنگ ردیف هنگام حرکت ماوس */
+}
+
+.add-job {
   font-size: 20px;
 }
 
 .input-job {
-  
   text-align: center;
 }
 
 .add-age {
-  
-
   font-size: 20px;
 }
 
 .input-age {
- 
   text-align: center;
+}
+
+button {
+  background-color: #f44336; /* رنگ قرمز برای دکمه حذف */
+  color: rgb(120, 159, 231); /* رنگ متن سفید */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px; /* لبه‌های گرد */
+}
+
+button:hover {
+  background-color: #d32f2f; /* رنگ تیره‌تر هنگام هاور */
 }
 .button-add {
   margin-top: 10%;
-  background-color: #cee0f5;
+  background-color: #143153;
   transition: background-color 0.5s;
 }
 .button-add:hover {
-  background-color: rgb(137, 206, 233);
+  background-color: rgb(62, 94, 107);
 }

@@ -17,27 +17,29 @@ function addEmployee() {
     document.getElementById("age").value = "";
     displayEmployees();
   } else {
-    alert("لطفا همه فیلد را پر کنید");
+    alert("لطفا همه فیلدها را پر کنید");
   }
 }
 
 function displayEmployees() {
   const tablebody = document.getElementById("employeeTable");
-  tablebody.innerHTML = "";
-  const employeelist = document.getElementById("employeelist");
-  employeelist.innerHTML = "";
-  employees.forEach((employee, index) => {
-    const employeeitem = document.createElement("div");
-    employeeitem.className = "employee-item";
+  tablebody.innerHTML = ""; // خالی کردن جدول برای بارگذاری جدید
 
-    employeeitem.innerHTML = `<span>${employee.name}-${employee.job}-${employee.age}سال</span> 
-        <button onclick="deleteEmployee(${index})">حذف</button>`;
-    employeelist.appendChild(employeeitem);
+  employees.forEach((employee, index) => {
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
+      <td>${employee.name}</td>
+      <td>${employee.job}</td>
+      <td>${employee.age}</td>
+      <td><button onclick="deleteEmployee(${index})">حذف</button></td>
+    `;
+
+    tablebody.appendChild(row); // اضافه کردن ردیف به جدول
   });
 }
-function deleteEmployee(index) {
-  employees.splice(index, 1);
-  displayEmployees();
-}
 
-console.log("esaed");
+function deleteEmployee(index) {
+  employees.splice(index, 1); // حذف کارمند از آرایه
+  displayEmployees(); // باز نمایش جدول پس از حذف
+}
